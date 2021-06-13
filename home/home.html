@@ -1,4 +1,37 @@
-<h1>Hello {{$ctrl.name}}!</h1>
+<!-- <h1>Hello {{$ctrl.name}}!</h1>
 <p>
   Start editing <b>home/home.html</b> :)
-</p>
+</p> -->
+
+<div class="header">
+  <div class="container">
+    MOVE Log
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+
+    <!-- TODO: Loop through exercises and display each one with this HTML -->
+    <div class="row" ng-repeat="exercise in exercises">
+      <div class="exercise-icon col-xs-2">
+        <img src="{{ exercise.icon }}" />
+      </div>
+
+      <div class="col-xs-6">
+        <p class="exercise-name">{{ exercise.name }}</p>
+      </div>
+
+      <div class="col-xs-4 counters">
+        <span class="decrease">-</span>
+        <span class="count">{{ exercise.count }}</span>
+        <span class="increase" ng-click="$ctrl.increase($index)">+</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container"></div>
+</div>
