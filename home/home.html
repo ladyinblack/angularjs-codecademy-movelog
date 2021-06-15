@@ -15,7 +15,7 @@
     <!-- TODO: Loop through exercises and display each one with this HTML -->
     <div class="row" ng-repeat="exercise in exercises">
       <div class="exercise-icon col-xs-2">
-        <img src="{{ exercise.icon }}" />
+        <img ng-src="{{ exercise.icon }}" />
       </div>
 
       <div class="col-xs-6">
