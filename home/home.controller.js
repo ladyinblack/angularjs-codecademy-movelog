@@ -51,6 +51,9 @@ class HomeCtrl {
     this.increase = function(index) {
       $scope.exercises[index].count += 1;
     };
+    $scope.decrease = function(index) {
+      $scope.exercises[index].count -= 1;
+    };
   }
 }
 

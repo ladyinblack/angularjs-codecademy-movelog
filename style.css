@@ -43,7 +43,6 @@ span {
   height: 50px;
   width: 50px;
 }
-
 .row p,
 .row span {
   display: inline-block;
@@ -57,7 +56,7 @@ span {
   font-size: 20px;
 }
 
-.counter {
+.counters {
   text-align: center;
 }
 
@@ -67,7 +66,7 @@ span {
   width: 40px;
 }
 
-.counters span .count {
+.counters span.count {
   background: #fff;
 }
 
